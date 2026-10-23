@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173d32">
+    <meta name="description" content="Contact Chauhan Properties about a listing or tell us what you are looking for.">
+    <title>Contact us · Chauhan Properties</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    <script type="module" src="js/contact.js"></script>
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="index.html" aria-label="Chauhan Properties home"><span class="brand-mark">CP</span><span>Chauhan <b>Properties</b></span></a><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Properties</a><a class="active" href="contact.html">Contact</a></nav><a class="header-cta" href="index.html#listings">Browse homes <span aria-hidden="true">↗</span></a></header>
+    <main class="contact-main"><div id="api-notice" class="notice" role="status" hidden></div><section class="contact-intro"><p class="eyebrow"><span class="eyebrow-dot"></span> LET’S TALK ABOUT YOUR NEXT STEP</p><h1>Tell us what<br><em>you’re looking for.</em></h1><p>Ask about a listing or share what kind of place would feel right. We’ll get back to you using the contact details you provide.</p><div class="contact-aside"><span class="aside-mark">CP</span><span>Good decisions start<br>with a conversation.</span></div></section>
+      <section class="contact-card"><div class="contact-card-heading"><p class="eyebrow">SEND AN ENQUIRY</p><h2>How can we help?</h2><p>Fields marked <span aria-hidden="true">*</span> are required.</p></div><div id="form-message" class="form-message" role="status" hidden></div>
+        <form id="enquiry-form" class="enquiry-form">
+          <label class="form-field"><span>Your name <b>*</b></span><input name="name" autocomplete="name" maxlength="200" required placeholder="e.g. Aditi Sharma"></label>
+          <div class="form-row"><label class="form-field"><span>Phone number <b>*</b></span><input name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="24" required placeholder="Your phone number"></label><label class="form-field"><span>Email <small>optional</small></span><input name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com"></label></div>
+          <label class="same-phone"><input id="same-phone" type="checkbox" checked><span>Use the same number for WhatsApp</span></label>
+          <label id="whatsapp-field" class="form-field" hidden><span>WhatsApp number <b>*</b></span><input name="whatsapp_number" type="tel" autocomplete="tel" minlength="7" maxlength="24" placeholder="WhatsApp number"></label>
+          <label class="form-field"><span>What would you like to know? <small>optional</small></span><textarea name="message" rows="5" maxlength="5000" placeholder="Tell us about a property or what you have in mind."></textarea></label>
+          <button class="button button-dark submit-button" type="submit">Send enquiry <span aria-hidden="true">→</span></button>
+          <p class="privacy-note">Your details are used to respond to this enquiry. Phone numbers are not verified.</p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">CP</span><span>Chauhan <b>Properties</b></span></a><p>Find a place that feels like yours.</p><span>© <span data-year></span> Chauhan Properties</span></footer>
+  </body>
+</html>

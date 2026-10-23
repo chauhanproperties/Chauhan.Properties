@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173d32">
+    <meta name="description" content="Explore homes, flats, and plots with Chauhan Properties. Browse current listings and ask us about a property.">
+    <title>Properties for sale · Chauhan Properties</title>
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    <script type="module" src="js/properties.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Chauhan Properties home"><span class="brand-mark">CP</span><span>Chauhan <b>Properties</b></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a class="active" href="index.html">Properties</a><a href="contact.html">Contact</a></nav>
+      <a class="header-cta" href="contact.html">Talk to us <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> FIND A PLACE TO CALL YOURS</p>
+          <h1>A good home<br>starts <em>right here.</em></h1>
+          <p class="hero-intro">Thoughtfully selected homes, flats and plots. Explore at your pace, and ask us anything when a place feels right.</p>
+          <a class="button button-light" href="#listings">Explore properties <span aria-hidden="true">↓</span></a>
+          <div class="hero-note"><span class="note-line"></span><span>Local guidance. Straight answers.</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div><div class="art-hill hill-back"></div><div class="art-hill hill-front"></div>
+          <div class="house-illustration"><div class="roof"></div><div class="house-body"><span class="window window-left"></span><span class="door"></span><span class="window window-right"></span></div><div class="house-step"></div></div>
+          <div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div><div class="art-leaf leaf-three"></div>
+          <div class="art-caption"><span>YOUR NEXT CHAPTER</span><b>begins at home</b></div>
+        </div>
+      </section>
+      <section class="trust-row" aria-label="Our approach"><div><span class="trust-icon">⌂</span><span>Homes picked with care</span></div><div><span class="trust-icon">↗</span><span>Clear details, no guesswork</span></div><div><span class="trust-icon">♡</span><span>People-first guidance</span></div></section>
+
+      <section class="listings-section" id="listings">
+        <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Find your kind of place.</h2></div><p class="section-intro">Browse the available listings and narrow things down to what matters to you.</p></div>
+        <div id="api-notice" class="notice" role="status" hidden></div>
+        <form id="filters" class="filters" aria-label="Filter properties">
+          <label class="filter-field"><span>Property type</span><select name="property_type"><option value="">All types</option><option value="plot">Plots</option><option value="house">Houses</option><option value="flat">Flats</option></select></label>
+          <label class="filter-field"><span>Min. price</span><input name="min_price" type="number" min="0" step="10000" inputmode="numeric" placeholder="Any"></label>
+          <label class="filter-field"><span>Max. price</span><input name="max_price" type="number" min="0" step="10000" inputmode="numeric" placeholder="Any"></label>
+          <label class="filter-field"><span>Min. area (sq ft)</span><input name="min_area" type="number" min="0" step="10" inputmode="numeric" placeholder="Any"></label>
+          <label class="filter-field"><span>Max. area (sq ft)</span><input name="max_area" type="number" min="0" step="10" inputmode="numeric" placeholder="Any"></label>
+          <label class="filter-field"><span>Sort by</span><select name="sort"><option value="newest">Newest</option><option value="price_asc">Price: low to high</option><option value="price_desc">Price: high to low</option><option value="oldest">Oldest</option></select></label>
+          <button class="button button-dark filter-submit" type="submit">Show properties <span aria-hidden="true">→</span></button>
+          <button class="filter-reset" type="reset">Clear filters</button>
+        </form>
+        <div class="results-bar"><p id="results-count" aria-live="polite"></p><p class="results-note">Prices shown as listed</p></div>
+        <div id="property-grid" class="property-grid" aria-live="polite"><div class="loading-card"><span class="spinner"></span><span>Finding properties…</span></div></div>
+        <nav id="pagination" class="pagination" aria-label="Property pages"></nav>
+      </section>
+      <section class="closing-banner"><div><p class="eyebrow">A QUESTION ON YOUR MIND?</p><h2>We’re happy to help<br>you find your way.</h2></div><a class="button button-light" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">CP</span><span>Chauhan <b>Properties</b></span></a><p>Find a place that feels like yours.</p><span>© <span data-year></span> Chauhan Properties</span></footer>
+  </body>
+</html>
