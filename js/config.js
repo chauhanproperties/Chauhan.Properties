@@ -1,4 +1,4 @@
-const PRODUCTION_API_URL = "https://REPLACE-WITH-YOUR-API.example.com";
+const PRODUCTION_API_URL = "https://server-sfyr.onrender.com";
 const isLocalHost = ["localhost", "127.0.0.1"].includes(window.location.hostname);
 
 export const API_BASE_URL = isLocalHost ? `${window.location.protocol}//${window.location.hostname}:5000` : PRODUCTION_API_URL;
